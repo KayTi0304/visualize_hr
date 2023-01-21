@@ -8,6 +8,7 @@ import CompanySIComponent from "../components/CompanySIComponent.vue";
 import CompanyUserComponent from "../components/CompanyUserComponent.vue";
 import ModuleComponent from "../components/ModuleComponent.vue";
 import LessonComponent from "../components/LessonComponent.vue";
+import AddModuleComponent from "../components/AddModuleComponent.vue";
 
 const routes = [{
         path: "/",
@@ -48,6 +49,11 @@ const routes = [{
         path: "/:id/modules",
         name: "ModuleComponent",
         component: ModuleComponent,
+    },
+    {
+        path: "/:id/add-modules",
+        name: "AddModuleComponent",
+        component: AddModuleComponent,
     },
     {
         path: "/:id/lessons",

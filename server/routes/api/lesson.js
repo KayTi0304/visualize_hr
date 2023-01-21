@@ -10,6 +10,11 @@ router.get("/module/:id", async(req, res) => {
     res.send(lessons);
 });
 
+router.get("/", async(req, res) => {
+    const result = await LessonDAO.findAll();
+    res.send(result);
+});
+
 // get one lesson
 router.get("/:id", async(req, res) => {
     const result = await LessonDAO.findById(req.params.id);

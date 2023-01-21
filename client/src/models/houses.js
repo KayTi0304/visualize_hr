@@ -9,7 +9,7 @@ export const housemodels = [{
         },
         collisionPosition: {
             x1: -0.3,
-            x2: -0.2,
+            x2: -0.1,
             z1: 4,
             z2: 5,
         },
@@ -25,7 +25,7 @@ export const housemodels = [{
         },
         collisionPosition: {
             x1: -0.3,
-            x2: -0.2,
+            x2: -0.1,
             z1: 2,
             z2: 3,
         },

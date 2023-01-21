@@ -151,6 +151,7 @@
       </button>
       <button
         class="m-5 h-16 bg-white/25 w-32 rounded-lg text-white font-semibold shadow-xl shadow-indigo-400/25 content-center p-2"
+        v-on:click="goToAddModules()"
       >
         Add Custom Modules
       </button>
@@ -231,6 +232,9 @@ export default {
     }
   },
   methods: {
+    goToAddModules() {
+      this.$router.push(`/${this.company.id}/add-modules`);
+    },
     goToModule() {
       this.$router.push(`/${this.company.id}/modules`);
     },

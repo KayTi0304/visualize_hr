@@ -23,6 +23,11 @@ router.get("/company/:id", async(req, res) => {
     res.send(result);
 });
 
+router.get("/", async(req, res) => {
+    const modules = await ModuleDAO.findAll();
+    res.send(modules);
+});
+
 // get one module
 router.get("/:id", async(req, res) => {
     const result = await ModuleDAO.findById(req.params.id);

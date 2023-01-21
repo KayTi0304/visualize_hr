@@ -15,6 +15,10 @@ const Module = db.define("Module", {
         type: Sequelize.STRING,
         allowNull: false,
     },
+    owner: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
 });
 
 module.exports = Module;

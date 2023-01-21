@@ -5,6 +5,7 @@ const EmploysDAO = require("../../DAO/employsDAO");
 const TakesDAO = require("../../DAO/takesDAO");
 const OffersDAO = require("../../DAO/offersDAO");
 const ModuleDAO = require("../../DAO/moduleDAO");
+const LessonDAO = require("../../DAO/lessonDAO");
 
 const router = express.Router();
 

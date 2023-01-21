@@ -68,14 +68,10 @@ export default {
       scene.add(house);
     }
 
-    /*
-    const cubeGeometry = new THREE.BoxGeometry(1, 1, 1, 1, 1, 1);
-    const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0x0000ff });
-    const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);*/
     const model = await loader.loadAsync("/assets/human.glb");
     const human = model.scene;
-    human.scale.set(0.5, 0.5, 0.5);
-    human.position.set(1, 0.5, 5);
+    human.scale.set(0.05, 0.05, 0.05);
+    human.position.set(1, 0.2, 5);
     scene.add(human);
 
     const animate = () => {
@@ -102,7 +98,9 @@ export default {
           human.position.z -= 0.1;
           break;
         case 13:
-          //console.log(cube.position.x + ", " + cube.position.y + ", " + cube.position.z);
+          console.log(
+            human.position.x + ", " + human.position.y + ", " + human.position.z
+          );
           for (let i = 0; i < modLen; i++) {
             if (
               human.position.x >= housemodels[i].collisionPosition.x1 &&
