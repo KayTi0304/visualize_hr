@@ -1,6 +1,7 @@
 # VisualiseHR
 
-Revolutionize employees' onboarding experience. It doesn't have to be boring. It doesn't have to be cold Google Docs.
+Revolutionize employees' onboarding experience. It doesn't have to be boring. It doesn't have to be cold Google Docs. <br>
+Visualize_HR is a HR onboarding platform for employees to complete their onboarding modules as required by their companies. Companies admin can use this platform to assign modules or make custom modules for their employees. Visualize_HR adds a visual twist to this experience by using OpenGL libraries and Three.js. 
 
 # Tech Stack
 
